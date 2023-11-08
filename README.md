@@ -1,67 +1,72 @@
 # Rubyknapp13.github.io
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Firm Website</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Sticky Header Example</title>
 </head>
 <body>
-    <header class="sticky-header">
-        <h1>My Sticky Header</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#practice-areas">Practice Areas</a></li>
+                <li><a href="#attorneys">Attorneys</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="content">
-        <!-- Your website content goes here -->
-    </div>
+
+    <section id="home">
+        <h1>Welcome to XYZ Law Firm</h1>
+        <p>Your trusted legal partner.</p>
+    </section>
+
+    <section id="practice-areas">
+        <h2>Our Practice Areas</h2>
+        <ul>
+            <li>Criminal Defense</li>
+            <li>Personal Injury</li>
+            <li>Family Law</li>
+            <li>Real Estate</li>
+            <li>Corporate Law</li>
+        </ul>
+    </section>
+
+    <section id="attorneys">
+        <h2>Our Attorneys</h2>
+        <div class="attorney">
+            <img src="attorney1.jpg" alt="Attorney 1">
+            <h3>John Doe</h3>
+            <p>John Doe is a seasoned attorney with over 10 years of experience.</p>
+        </div>
+        <div class="attorney">
+            <img src="attorney2.jpg" alt="Attorney 2">
+            <h3>Jane Smith</h3>
+            <p>Jane Smith specializes in family law and has a successful track record.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you need legal assistance, don't hesitate to get in touch with us.</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 XYZ Law Firm. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
-CSS (styles.css):
-
-css
-Copy code
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-.sticky-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    transition: background-color 0.3s, padding 0.3s;
-}
-
-.sticky-header.sticky {
-    background-color: #fff;
-    color: #333;
-    padding: 5px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.content {
-    padding: 20px;
-    margin-top: 60px; /* Adjust this margin to avoid content overlapping with the header */
-}
-JavaScript (script.js):
-
-javascript
-Copy code
-window.addEventListener("scroll", function () {
-    const header = document.querySelector(".sticky-header");
-    if (window.scrollY > 0) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
-});
-This code creates a simple sticky header that becomes fixed to the top of the page when the user scrolls down. The header changes its background color and padding when it becomes sticky to create a visual effect. You can adjust the styles and appearance to match your website's design.
-
-
-
-
-
