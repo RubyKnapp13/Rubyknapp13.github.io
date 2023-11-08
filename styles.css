@@ -6,7 +6,7 @@ body, h1, p {
 
 /* Set the background image to cover the entire viewport */
 .tree-background {
-    background-image: url('tree-image.jpg'); /* Replace with the path to your tree image */
+    background-image: url('tree.jpg'); /* Replace with the path to your tree image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Optional for a fixed background */
