@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Law Firm Website</title>
- <link rel="stylesheet" type="text/css" href="styles.css">
-
+ 
 </head>
 <body>
     <header>
@@ -20,11 +19,9 @@
         </nav>
     </header>
     <section id="home">
-    <h2>Welcome to Law Firm Name</h2>
-    <p>We are committed to providing quality legal services to our clients. At Law Firm Name, we take our legal duties seriously, and our primary focus is on serving our clients' best interests. Our team of experienced lawyers is dedicated to upholding the highest standards of professionalism, integrity, and ethics in the legal profession.</p>
-    <p>Our commitment to our clients goes beyond legal representation; we strive to build strong and lasting relationships based on trust and open communication. Whether you are facing legal challenges in criminal defense, family law, personal injury, real estate, or any other area, we are here to guide you through the legal process and provide expert advice and representation.</p>
-</section>
-
+        <h2>Welcome to Law Firm Name</h2>
+        <p>We are committed to providing quality legal services.</p>
+    </section>
     <section id="practice-areas">
         <h2>Practice Areas</h2>
         <ul>
