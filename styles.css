@@ -8,8 +8,8 @@
 /* Apply some basic styling to the body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: navy; /* Change text color to navy blue */
+    background-color: black; /* Change background color to black */
+    color: white; /* Change text color to white */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -40,7 +40,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: orange; /* Change link color to orange */
+    color: orange;
     font-weight: bold;
 }
 
