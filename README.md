@@ -20,7 +20,7 @@
     </header>
     <section id="home">
         <h2>Welcome to Law Firm Name</h2>
-
+        <p>We are committed to providing quality legal services.</p>
     </section>
     <section id="practice-areas">
         <h2>Practice Areas</h2>
