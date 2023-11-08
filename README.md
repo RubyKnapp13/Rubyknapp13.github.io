@@ -3,49 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Law Firm Website</title>
- <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sticky Header Example</title>
 </head>
 <body>
-    <header>
-        <h1>Law Firm Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#practice-areas">Practice Areas</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="sticky-header">
+        <h1>My Sticky Header</h1>
     </header>
-    <section id="home">
-        <h2>Welcome to Law Firm Name</h2>
-        <p>We are committed to providing quality legal services to our clients. At Law Firm Name, we take our legal duties seriously, and our primary focus is on serving our clients' best interests. Our team of experienced lawyers is dedicated to upholding the highest standards of professionalism, integrity, and ethics in the legal profession.</p>
-        <p>Our commitment to our clients goes beyond legal representation; we strive to build strong and lasting relationships based on trust and open communication. Whether you are facing legal challenges in criminal defense, family law, personal injury, real estate, or any other area, we are here to guide you through the legal process and provide expert advice and representation.</p>
-    </section>
-    <section id="practice-areas">
-        <h2>Practice Areas</h2>
-        <ul>
-            <li>Criminal Defense</li>
-            <li>Family Law</li>
-            <li>Personal Injury</li>
-            <li>Real Estate</li>
-        </ul>
-    </section>
-    <section id="about-us">
-        <h2>About Us</h2>
-        <p>We have a team of experienced lawyers who are dedicated to helping our clients.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us for legal assistance.</p>
-        <button id="contact-button">Contact Now</button>
-    </section>
-    <script>
-        // JavaScript for interactivity
-        document.getElementById("contact-button").addEventListener("click", function () {
-            alert("Please call us at 555-123-4567 or send us an email at info@lawfirmname.com.");
-        });
-    </script>
+    <div class="content">
+        <!-- Your website content goes here -->
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+CSS (styles.css):
+
+css
+Copy code
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sticky-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+.sticky-header.sticky {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.content {
+    padding: 20px;
+    margin-top: 60px; /* Adjust this margin to avoid content overlapping with the header */
+}
+JavaScript (script.js):
+
+javascript
+Copy code
+window.addEventListener("scroll", function () {
+    const header = document.querySelector(".sticky-header");
+    if (window.scrollY > 0) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+});
+This code creates a simple sticky header that becomes fixed to the top of the page when the user scrolls down. The header changes its background color and padding when it becomes sticky to create a visual effect. You can adjust the styles and appearance to match your website's design.
+
+
+
+
+
