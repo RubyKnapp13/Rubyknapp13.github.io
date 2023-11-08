@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #333;
+    color: navy; /* Change text color to navy blue */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -40,7 +40,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: orange; /* Change link color to orange */
     font-weight: bold;
 }
 
