@@ -8,16 +8,16 @@
 /* Apply some basic styling to the body */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('water.jpg'); /* Set the background image */
-    background-size: cover;
-    color: white;
+    background-color: #000; /* Set the background color to black */
+    color: #fff; /* Set text color to white */
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
+
 /* Style the header section */
 header {
-    background-color: #333;
+    background-color: #333; /* Dark gray background color for the header */
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -47,10 +47,11 @@ nav a {
 /* Style the sections */
 section {
     padding: 40px;
-    background-color: #fff;
+    background-color: #111; /* Dark gray background color for sections */
     margin: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 /* Style the "Contact Now" button */
